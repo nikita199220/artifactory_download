@@ -1,0 +1,8 @@
+---
+# tasks file for download_build
+- name: Download War file 
+  get_url:
+    url: https://artifactory.ing.net/artifactory/releases_mvn_HelloCloud_CloudNativeChapter/HelloCloudApp/HelloCloudApp/v1.{{ version }}/HelloCloudApp-v1.{{ version }}.war
+    username: "{{ username }}"
+    password: "{{ password }}"
+    dest: "{{ destination }}"
